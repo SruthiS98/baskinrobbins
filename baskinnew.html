@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+        .card img{
+ 
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card img:hover{
+    top: -20px;
+    
+}
+.screen button{
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    background-color: rgb(211, 215, 223);
+    border: none;
+}
+
+.btn-para p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    visibility: hidden; 
+}
+.btn-para span{
+        
+        visibility: hidden; 
+        line-height: 40px;
+    }
+
+.screen button:hover{
+    background-color: gray;
+}
+.screen button:hover .btn-para p{
+    visibility: visible;
+}
+.screen button:hover .btn-para span{
+    visibility: visible;
+}
+
+.footer{
+    /* background-color: aqua; */
+    /* /* padding-top: 100px; */
+    padding-bottom: 10px; 
+ }
+ .footer-image img{ 
+     width: 100%;
+     
+ }  
+  .footer-image{
+     /* background-color: red; */
+     
+     height: 100%;
+     width: 100%;
+     position: relative;
+  }
+ 
+ .container-items{
+     display: flex;
+     flex-direction: row;
+     /* justify-content: center; */
+     /* align-items: center; */
+ }
+ .footer-container{
+     position: absolute; 
+     top: 50%; 
+   /* left: -20px; */
+     /* background-color: green; */
+     /* margin-top: 50px;
+     margin-bottom: 50px; */
+     margin-left: 300px;
+     margin-right: 200px;
+ }
+ .container-items-first, .container-items-second{
+     cursor: pointer;
+ }
+ .container-ul li{
+     line-height: 30px;
+     list-style: none;
+     font-family: arial;
+     font-size: 16px;
+     color: white;
+ }
+ .container-items-first, .container-items-second, .container-items-third{
+     margin-right: 20px;
+ }
+ .footer-btn{
+ margin-left: 40px;
+ display: inline-flex;
+ align-items: center;
+     justify-content: center;
+ }
+ .footer-btn input{
+     border: 1px solid rgb(213,213,213);
+     font-family: arial;
+     font-size: 14px;
+     font-weight: 400;
+     border-radius: 8px;
+     padding-top: 14px;
+     padding-right: 40px;
+     padding-bottom: 14px;
+     padding-left: 16px;
+ }
+ .footer-btn button{
+     cursor: pointer;
+     width: 90px;
+     margin-left: -25px;
+     background-color: rgb(242,12,144);
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-family: arial;
+     font-weight: 600;
+     font-size: 16px;
+     padding-top: 14px;
+     padding-right: 16px;
+     padding-bottom: 14px;
+     padding-left: 16px;
+ }
+ 
+ .container-sitemap{
+     position: absolute; 
+     /* background-color: green; */
+     top: 85%; 
+     /* margin-left: -230; */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     font-family: arial;
+     font-size: 16px;
+ }
+ .container-sitemap-left{
+     margin-left: 60px;
+     /* background-color: aqua; */
+     margin-right: 100px;
+ }
+ .container-sitemap-left p{
+     color: white;
+ }
+ .container-sitemap-middle{
+     margin-left: 200px;
+     margin-right: 100px;
+     /* background-color: blue; */
+ } 
+ .container-sitemap-middle img{
+    cursor: pointer;
+     width: 50px;
+     margin-right: 10px;
+ }
+ .container-sitemap-right{
+    cursor: pointer;
+     margin-left: 250px;
+     /* background-color: brown; */
+ }
+ .container-sitemap-right p{
+     color: white;
+ }
+  
+    </style>
+</head>
+<body>
+    
+<header>
+
+
+</header>
+
+
+<section class="mt-5">
+    <div class="row" >
+            <img src="Baskin Robbins/images/image3" style="width: 100%;">
+    
+    </div>
+</section>
+
+
+
+
+<section class="mt-5 bg-light">
+    <div class="row">
+        <h1 class="text-center" style="color: rgb(242,12,144);">What's <span style="color: rgb(63, 32, 33);">New?</span></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4 ml-auto">
+            <div class="card text-center mt-3" style="width: 20rem; border: none;">
+                <img src="Baskin Robbins/images/ice1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Naughty Nutella</h5>
+                  <p class="card-text">Ice cream</p>
+                  <a href="#" class="btn" style="background-color: rgb(242,12,144); color: white;">ORDER NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center mt-3" style="width: 20rem;border: none;">
+                <img src="Baskin Robbins/images/ice2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ferrero Moments Mousse</h5>
+                  <p class="card-text">Ice cream</p>
+                  <a href="https://baskinrobbins.dotpe.in/" class="btn" style="background-color: rgb(242,12,144); color: white;">ORDER NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center mt-3" style="width: 20rem;border: none;">
+                <img src="Baskin Robbins/images/ice3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Brown Buiscuit Boba</h5>
+                  <p class="card-text">Ice cream</p>
+                  <a href="https://baskinrobbins.dotpe.in/" class="btn" style="background-color: rgb(242,12,144); color: white;">ORDER NOW</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="m-5">
+    <div class="row">
+        <h1 class=" m-4 text-center" style="color: rgb(242,12,144);">Shop by <span style="color: rgb(63, 32, 33);">Range</span></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4 ml-auto">
+            <div class="card text-center mt-3" style="width: 20rem; border: none;">
+                <img src="Baskin Robbins/images/image4" class="card-img-top" alt="...">
+            
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center mt-3" style="width: 20rem;border: none;">
+                <img src="Baskin Robbins/images/image5" class="card-img-top" alt="...">
+                
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center mt-3" style="width: 20rem;border: none;">
+                <img src="Baskin Robbins/images/image6" class="card-img-top" alt="...">
+                
+              </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="mt-5 bg-light">
+    <div class="row">
+        <h1 class=" m-4 text-center " style="color: rgb(242,12,144);">All time <span style="color: rgb(63, 32, 33);">Favourites</span></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4 ml-auto">
+            <div class="card text-center mt-3" style="width: 20rem; border: none;">
+                <img src="Baskin Robbins/images/image7" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Black Current</h5>
+                
+                  <a href="#" class="btn" style="background-color: rgb(242,12,144); color: white;">ORDER NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center mt-3" style="width: 20rem;border: none;">
+                <img src="Baskin Robbins/images/image8" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Very Berry Strawberry</h5>
+                  
+                  <a href="#" class="btn" style="background-color: rgb(242,12,144); color: white;">ORDER NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center mt-3" style="width: 20rem;border: none;">
+                <img src="Baskin Robbins/images/image9.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cotton Candy</h5>
+                  
+                  <a href="#" class="btn" style="background-color: rgb(242,12,144); color: white;">ORDER NOW</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-5">
+<div class="screen">
+    <button id="btnclick" onclick="changetext()">
+        <div class="btn-para">
+        <p id="first">
+        It's the fizzz that's got the real rizz!😎
+
+        Available in four refreshing flavours;
+        
+        Hawaiian Punch⛱
+        Magic Bubble 🔮
+        Berry Burst 🍒🍓
+        Mango Passion 🥭..
+        <span>June 14,2023</span>
+    </p>
+    <!-- <p id="demo">
+        It's the fizzz that's got the real rizz!😎
+
+        Available in four refreshing flavours;
+
+        Hawaiian Punch⛱
+        Magic Bubble 🔮
+        Berry Burst 🍒🍓
+        Mango Passion 🥭
+
+        Sip our ice cream floats today!
+
+        Available at a Baskin Robbins parlor near you.
+
+        #YourHappyPlace #BaskinRobbinsIndia #IceCreamFloats #BerryBurst #MangoPassion #MagicPotion #HawaiianPunch #IceCreamSoda
+    </p> -->
+</div>
+    </button>
+
+    <button onclick="changetexttwo()">
+        <div class="btn-para">
+            <p id="second">
+                Pop a rock and watch your worries crumble!😎
+
+                When in the day are you most likely to 
+                binge on our ice cream rocks? Share it in 
+                the comment section....
+                <span>June 12,2023</span>
+        </p>
+    </button>
+
+    <button onclick="changetextthree()">
+        <div class="btn-para">
+            <p id="third">
+                Netflix And Rock!😎
+
+
+                Order your tub of ice cream rocks today.😋
+                
+                #BaskinRobbinsIndia #BaskinRobbins #Netflix #IceCreamRocks......
+            
+                <span>June 10,2023</span>
+        </p>
+    </button>
+
+    <button onclick="changetextfourth()">
+        <div class="btn-para">
+            <p id="fourth">
+                Happy thoughts with every pop!😎
+
+                One pop of Mississippi Mud Ice Cream Rocks is all it takes to melt your first date jitters away.😋
+                
+                Available at a......
+            <span>June 9,2023</span>
+        </p>
+    </button>
+    <button onclick="changetextfifth()">
+        <div class="btn-para">
+            <p id="fifth">
+                Keep your inner child alive with our Funwich!😎
+                .
+                .
+                .
+                #BaskinRobbisnIndia #Funwich #CookieSandwich #IcecreamSandwich #DarkChocolate #Cookies ....
+            <span>June 8,2023</span>
+        </p>
+    </button>
+    <button onclick="changetextsixth()">
+        <div class="btn-para">
+            <p id="sixth">
+                Immerse yourself in our Grand Fruit Cream sundae!😎
+
+                *T&amp;C apply
+                
+                #BaskinRobbinsIndia #BaskinRobbins #Apple #VisionPro #Fruity......
+            <span>June 7,2023</span>
+        </p>
+    </button>
+    
+</div>
+</section>
+
+<section class="mt-5">
+
+    <div class="footer">
+        <div class="footer-image">
+            <img src="Baskin Robbins/images/Footer.png">
+            <div class="footer-container">
+                <div class="container-items">
+                    <div class="container-items-first">
+                        <ul class="container-ul">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Our Stores</a></li>
+                        <li><a>Blogs</a></li>
+                    </ul>
+                    </div>
+                    <div class="container-items-second">
+                        <ul class="container-ul">
+                        <li><a>Contact Us</a></li>
+                        <li><a>Franchise Enquiry</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Terms & Conditions</a></li>
+                    </ul>
+                    </div>
+                    <div class="container-items-third">
+                        <ul class="container-ul">
+                        <li><a>Subscribe to news letter</a></li>
+                    </ul>
+                    <!-- <div class="footer-btn">
+                        <input type="email" placeholder="enter your email">
+                        <button>SUBMIT</button>
+                    </div> -->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container-sitemap">
+                <div class="container-sitemap-left">
+                    <p>Copyright | Baskins Robbins India</p>
+                </div>
+                <div class="container-sitemap-middle">
+                    <img src="Baskin Robbins/images/Youtube.webp">
+                    <img src="Baskin Robbins/images/Instagram.png">
+                    <img src="Baskin Robbins/images/Twitter.png">
+                    <img src="Baskin Robbins/images/Facebook.png">
+                </div>
+                <div class="container-sitemap-right">
+                    <p>Sitemap</p>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+
+</section>
+
+<script>
+
+    function changetext(){
+        // var change= document.getElementById("btnclick").value
+        // document.getElementById("demo").innerHTML=change
+        
+        document.getElementById("first").innerHTML = "It's the fizzz that's got the real rizz!😎 Available in four refreshing flavours, Hawaiian Punch⛱ Magic Bubble 🔮 Berry Burst 🍒🍓 Mango Passion 🥭 Sip our ice cream floats today! Available at a Baskin Robbins parlor near you. #YourHappyPlace #BaskinRobbinsIndia #IceCreamFloats #BerryBurst #MangoPassion #MagicPotion #HawaiianPunch #IceCreamSoda";
+    
+    }
+    function changetexttwo(){
+    document.getElementById("second").innerHTML = "Pop a rock and watch your worries crumble!😎 When in the day are you most likely to binge on our ice cream rocks? Share it in the comment section below.😌 #BaskinRobbinsIndia #YourHappyPlace #IceCreamRocks #MississippiMud #CottonCandy #PopTheRock";
+    }
+    
+    function changetextthree(){
+    document.getElementById("third").innerHTML = "Netflix And Rock!😎 Order your tub of ice cream rocks today.😋 #BaskinRobbinsIndia #BaskinRobbins #Netflix #IceCreamRocks #PostDinner #MississippiMud #MovieTime #NetflixAndChill #Netflix #NetflixShows #Chill #MovieNight";
+    }  
+    
+    function changetextfourth(){
+    document.getElementById("fourth").innerHTML = "Happy thoughts with every pop!😎 One pop of Mississippi Mud Ice Cream Rocks is all it takes to melt your first date jitters away.😋 Available at a BR parlor near you or via @swiggyindia @zomato and www.baskinrobbinsindia.com #YourHappyPlace #BaskinRobbinsIndia #Mississippi Mud #IceCreamRocks #PopTheRock #ElevateYourMood";
+    }
+    
+    
+    function changetextfifth(){
+    document.getElementById("fifth").innerHTML = "Keep your inner child alive with our Funwich!😎...#BaskinRobbisnIndia #Funwich #CookieSandwich #IcecreamSandwich #DarkChocolate #Cookies #MunchIt #SnackIt #Snack";
+    }
+    
+    
+    function changetextsixth(){
+        document.getElementById("sixth").innerHTML = "Immerse yourself in our Grand Fruit Cream sundae!😎 *T&amp;C apply #BaskinRobbinsIndia #BaskinRobbins #Apple #VisionPro #Fruity #GrandFruitCreamSundae #FruitCreamSundae #Fruitfest #SummerFruits #FruitSundae #Sundae";
+    }
+    
+    </script>
+</body>
+</html>
